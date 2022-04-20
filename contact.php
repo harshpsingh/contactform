@@ -25,8 +25,7 @@
   <div class="form-group">
     <label for="mobile">Mobile</label>
     <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter Your Mobile"  minlength="10" maxlength="10"  required  >
-    <span id="mob" name="mob"></span>
-  </div>
+    <
   <div class="form-group ">
     <label for="email">Email</label>
 	
@@ -60,19 +59,7 @@
 </div>
 
 </body>
-<script>
-function checkmobile(val) {
-	$.ajax({
-	type: "POST",
-	url: "checkmobile.php",
-	data:'mobile='+val,
-	success: function(data){
-		$("#mob").html(data);
-	}
-	});
-}
 
-</script>
 </html>
 <?php
 
